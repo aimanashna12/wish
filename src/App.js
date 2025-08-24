@@ -1,19 +1,41 @@
 import React, { useState } from 'react';
 import './App.css';
 
+// Import images from the src folder
+import jan1 from './images/jan1.jpg';
+import jan2 from './images/jan2.jpg';
+import jan3 from './images/jan3.jpg';
+import feb1 from './images/feb1.jpg';
+import feb2 from './images/feb2.jpg';
+import mar1 from './images/mar1.jpg';
+import mar2 from './images/mar2.jpg';
+import mar3 from './images/mar3.jpg';
+import mar4 from './images/mar4.jpg';
+import apr1 from './images/apr1.jpg';
+import apr2 from './images/apr2.jpg';
+import apr3 from './images/apr3.jpg';
+import apr4 from './images/apr4.jpg';
+import jul1 from './images/jul1.jpg';
+import jul2 from './images/jul2.jpg';
+import jul3 from './images/jul3.jpg';
+import aug1 from './images/aug1.jpg';
+import aug2 from './images/aug2.jpg';
+import oct1 from './images/oct1.jpg';
+import oct2 from './images/oct2.jpg';
+
 const months = [
   'January', 'February', 'March', 'April',
   'July', 'August', 'October',
 ];
 
 const monthImages = {
-  January: ["/jan1.jpg", "/jan2.jpg", "/jan3.jpg"],
-  February: ["/feb1.jpg", "/feb2.jpg"],
-  March: ["/mar1.jpg", "/mar2.jpg", "/mar3.jpg", "/mar4.jpg"],
-  April: ["/apr1.jpg", "/apr2.jpg", "/apr3.jpg", "/apr4.jpg"],
-  July: ["/jul1.jpg", "/jul2.jpg"],
-  August: ["/aug1.jpg", "/aug2.jpg", "/aug3.jpg"],
-  October: ["/oct1.jpg", "/oct2.jpg"]
+  January: [jan1, jan2, jan3],
+  February: [feb1, feb2],
+  March: [mar1, mar2, mar3, mar4],
+  April: [apr1, apr2, apr3, apr4],
+  July: [jul1, jul2, jul3],
+  August: [aug1, aug2],
+  October: [oct1, oct2]
 };
 
 const timelineEvents = [
@@ -321,9 +343,9 @@ function App() {
               Click Here
             </a>
 
-            {/* <p className="footer-credit">
+            <p className="footer-credit">
               Made with ❤️ for Aryannnnn
-            </p> */}
+            </p>
           </div>
         </footer>
     </div>
